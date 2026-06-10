@@ -1,0 +1,12 @@
+# 元PDF・抽出スクリプト（著作物のため非公開）
+raw/
+
+# OS / エディタ
+.DS_Store
+.claude/
+
+# Vercel
+.vercel/
+
+# Node
+node_modules/
