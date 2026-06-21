@@ -194,13 +194,16 @@ function renderHome(root) {
   const cntWrap = el("div", "field");
   cntWrap.appendChild(el("label", "field-label", "問題数"));
   const cnts = el("div", "chip-row");
-  [10, 20, 50, "all"].forEach((n) => {
-    const lbl = n === "all" ? "全部" : `${n}問`;
+  [10, 20, 35, 50, "all"].forEach((n) => {
+    const lbl = n === "all" ? "全部" : n === 35 ? "35問(本番)" : `${n}問`;
     const chip = el("button", "chip" + (State.count === n ? " active" : ""), lbl);
     chip.onclick = () => { State.count = n; renderHome(root); };
     cnts.appendChild(chip);
   });
   cntWrap.appendChild(cnts);
+  if (State.count === 35) {
+    cntWrap.appendChild(el("p", "field-hint", "本番想定モード：はい/いいえ問題は1文ずつを1問として採点し、総回答数に対する正答率を表示します。"));
+  }
   settings.appendChild(cntWrap);
 
   // 出題順
@@ -378,11 +381,37 @@ function next() {
   }
 }
 
+// 回答単位の採点（はい/いいえ問題は文ごとに1問として数える）
+function answerUnitStats(queue, answers) {
+  let total = 0, got = 0;
+  queue.forEach((q) => {
+    const a = answers[q.id];
+    if (q.type === "truefalse") {
+      total += q.statements.length;
+      if (a && Array.isArray(a.selected)) {
+        q.tfAnswers.forEach((ans, i) => { if (a.selected[i] === ans) got++; });
+      }
+    } else {
+      total += 1;
+      if (a?.isCorrect) got++;
+    }
+  });
+  return { total, got };
+}
+
 // ---- 結果 ----
 function renderResult(root) {
-  const total = State.queue.length;
-  const correct = State.queue.filter((q) => State.answers[q.id]?.isCorrect).length;
-  const acc = Math.round((correct / total) * 100);
+  const examMode = State.count === 35; // 本番想定＝回答単位で採点
+  const qTotal = State.queue.length;
+  const qCorrect = State.queue.filter((q) => State.answers[q.id]?.isCorrect).length;
+  let total, correct;
+  if (examMode) {
+    const s = answerUnitStats(State.queue, State.answers);
+    total = s.total; correct = s.got;
+  } else {
+    total = qTotal; correct = qCorrect;
+  }
+  const acc = total ? Math.round((correct / total) * 100) : 0;
   const sec = Math.round((Date.now() - State.startTime) / 1000);
   const mm = Math.floor(sec / 60), ss = sec % 60;
 
@@ -393,7 +422,10 @@ function renderResult(root) {
   const cls = acc >= 80 ? "great" : acc >= 60 ? "good" : "bad";
   score.innerHTML = `
     <div class="big-score ${cls}">${acc}<span class="pct">%</span></div>
-    <div class="score-detail">${correct} / ${total} 問正解 ・ 所要 ${mm}分${ss}秒</div>`;
+    <div class="score-detail">${correct} / ${total} 問正解 ・ 所要 ${mm}分${ss}秒</div>` +
+    (examMode
+      ? `<div class="score-note">本番採点方式（回答単位）・全${qTotal}問中 ${qCorrect}問を完答</div>`
+      : "");
   wrap.appendChild(score);
 
   const actions = el("div", "result-actions");

@@ -221,6 +221,12 @@ code.cmd {
 .big-score.bad { color: var(--ng); }
 .big-score .pct { font-size: 26px; }
 .score-detail { color: var(--text-dim); margin-top: 6px; }
+.score-note {
+  display: inline-block; margin-top: 12px; font-size: 12px; font-weight: 600;
+  color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-radius: 999px; padding: 5px 12px;
+}
+.field-hint { font-size: 12px; color: var(--text-dim); line-height: 1.6; margin: 8px 2px 0; }
 .result-actions { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
 .result-row, .list-row {
   display: flex; align-items: center; gap: 10px; width: 100%;
