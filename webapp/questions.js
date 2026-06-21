@@ -45,7 +45,7 @@ window.QUESTIONS = [
   "statements": [
    "可用性ゾーンを使用すると、Azure をデータセンターの障害から保護できます。",
    "可用性ゾーンを使用すると、Azure をリージョンの障害から保護できます。",
-   "マネージドディスクのゾーン冗長ストレージを使用すると、データセンターの障害からマネージドディスクを 保護できます。"
+   "マネージドディスクのゾーン冗長ストレージを使用すると、データセンターの障害からマネージドディスクを保護できます。"
   ],
   "tfAnswers": [
    "はい",
@@ -65,8 +65,8 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Azure portal で Azure Cloud Shell を起動し、Bash を選択します。Azure Cloud Shell でコマンドを実行 します。",
-   "Azure portal で Azure Cloud Shell を起動し、PowerShell を選択します。 Azure Cloud Shell でコマン ドを実行します。",
+   "Azure portal で Azure Cloud Shell を起動し、Bash を選択します。Azure Cloud Shell でコマンドを実行します。",
+   "Azure portal で Azure Cloud Shell を起動し、PowerShell を選択します。 Azure Cloud Shell でコマンドを実行します。",
    "Windows 10 のコンピューターに、Azure CLI をインストールします。コマンドプロンプトを使用して Azure にサインインし、コマンドを実行します。"
   ],
   "tfAnswers": [
@@ -179,7 +179,7 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Microsoft Entra ID(Azure Active Directory) Premium は、少なくとも 99.9% の可用性が保証されます。",
-   "すべての Azure の有料顧客は、月間稼働率がサービスレベルアグリーメント(SLA)で保証されているレベル を下回っている場合、クレジットを請求できます。"
+   "すべての Azure の有料顧客は、月間稼働率がサービスレベルアグリーメント(SLA)で保証されているレベルを下回っている場合、クレジットを請求できます。"
   ],
   "tfAnswers": [
    "はい",
@@ -394,8 +394,8 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Azure Policy を仮想マシンに割り当てることができます。",
-   "Azure Policy がリソースグループに割り当てられている場合、準拠していないリソースはグループから削 除されます。",
-   "Azure Policy がリソースグループに割り当てられている場合、そのグループには準拠したリソースのみを デプロイできます。"
+   "Azure Policy がリソースグループに割り当てられている場合、準拠していないリソースはグループから削除されます。",
+   "Azure Policy がリソースグループに割り当てられている場合、そのグループには準拠したリソースのみをデプロイできます。"
   ],
   "tfAnswers": [
    "はい",
@@ -481,7 +481,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Azure Cloud Shell を使用する場合、コンピューターに Azure Cloud Shell をインストールする必要があり ます。",
+   "Azure Cloud Shell を使用する場合、コンピューターに Azure Cloud Shell をインストールする必要があります。",
    "Azure CLI は、既定で Windows 11 にインストールされます。",
    "Azure PowerShell は、Windows、Linux、macO S のコンピューターで使用できます。"
   ],
@@ -570,8 +570,8 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Azure リソースにアクセスするための認可は、Azure AD ユーザーのみに行われます。",
-   "Azure Active Directory、サードパーティのクラウドサービス、オンプレミスの Active Directory に保存され ている ID を使用して、Azure リソースにアクセスできます。",
-   "Azure には、Azure リソースへの安全なアクセスを提供する組み込みの認証および承認サービスがありま す。"
+   "Azure Active Directory、サードパーティのクラウドサービス、オンプレミスの Active Directory に保存されている ID を使用して、Azure リソースにアクセスできます。",
+   "Azure には、Azure リソースへの安全なアクセスを提供する組み込みの認証および承認サービスがあります。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -650,8 +650,8 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "1 つのリソースグループにデプロイされる Azure リソースは、同じリージョンである必要があります。",
-   "リソースグループにタグを割り当てると、リソースグループ内のすべてのリソースに同じタグが設定されま す。",
-   "リソースグループに管理権限を設定すると、リソースグループ内のすべてのリソースに管理権限が継承さ れます。"
+   "リソースグループにタグを割り当てると、リソースグループ内のすべてのリソースに同じタグが設定されます。",
+   "リソースグループに管理権限を設定すると、リソースグループ内のすべてのリソースに管理権限が継承されます。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -759,7 +759,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Azure Active Directory(Azure AD)は、オンプレミスアプリケーションへのアクセスを管理するために使用 する事ができます。",
+   "Azure Active Directory(Azure AD)は、オンプレミスアプリケーションへのアクセスを管理するために使用する事ができます。",
    "Azure Active Directory(Azure AD)は、シングルサインオン(SSO)を提供します。",
    "iOS デバイスは、Azure Active Directory(Azure AD)に登録する事ができます。"
   ],
@@ -1025,7 +1025,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "組織のユーザーが Azure の無料アカウントを使用している場合、Azure の仮想マシンとストレージアカウン トのみを作成できます。",
+   "組織のユーザーが Azure の無料アカウントを使用している場合、Azure の仮想マシンとストレージアカウントのみを作成できます。",
    "Azure の無料アカウントは、特定の期間が過ぎると有効期限が切れます。",
    "同じマイクロソフトアカウントを使用して 10 個まで Azure の無料アカウントを作成することができます。"
   ],
@@ -1102,8 +1102,8 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Microsoft Entra Multi-Factor Authentication(MFA)ソリューションを実装するために、オンプレミスの ID をクラウドに同期しなければなりません。",
-   "Microsoft Entra Multi-Factor Authentication(M FA)の有効な方法は、写真付きの ID とパスポート番号 の 2 つで (ア) す。",
-   "Microsoft Entra Multi-Factor Authentication(MFA)は、管理者アカウントと非管理者アカウントに要求 する事ができます。"
+   "Microsoft Entra Multi-Factor Authentication(M FA)の有効な方法は、写真付きの ID とパスポート番号の 2 つで (ア) す。",
+   "Microsoft Entra Multi-Factor Authentication(MFA)は、管理者アカウントと非管理者アカウントに要求する事ができます。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -1156,7 +1156,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "ハイブリッドクラウドモデルを利用するには、企業はプライベートクラウドモデルから移行しなければなりま せん。",
+   "ハイブリッドクラウドモデルを利用するには、企業はプライベートクラウドモデルから移行しなければなりません。",
    "企業はパブリッククラウドを利用することにより、社内ネットワークをクラウドに拡張できます。",
    "パブリッククラウドモデルでは、企業のゲストユーザーのみがクラウドのリソースにアクセスできます。"
   ],
@@ -1180,7 +1180,7 @@ window.QUESTIONS = [
   "statements": [
    "Azure サブスクリプションは、複数の Microsoft Entra テナントに関連付けることができます。",
    "Microsoft Entra テナントを他の Azure サブスクリプションに関連付けることができます。",
-   "Azure のサブスクリプションが無効化された場合、関連づいている Micro soft Entra テナントは自動的に 削除されます。"
+   "Azure のサブスクリプションが無効化された場合、関連づいている Micro soft Entra テナントは自動的に削除されます。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -1233,7 +1233,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Azure ExpressRoute 接続を使用する際、オンプレミスネットワークから A zure への受信データは常に無料 です。",
+   "Azure ExpressRoute 接続を使用する際、オンプレミスネットワークから A zure への受信データは常に無料です。",
    "Azure からオンプレミスネットワークへの送信データトラフィックは、常に無料です。",
    "同じリージョン内の Azure サービス間のデータ通信は常に無料です。"
   ],
@@ -1358,7 +1358,7 @@ window.QUESTIONS = [
    },
    {
     "key": "D",
-    "text": "仮想マシンは Windows Server 2016 が稼働している場合のみ新しいサブスクリプションに移動することが でます。"
+    "text": "仮想マシンは Windows Server 2016 が稼働している場合のみ新しいサブスクリプションに移動することがでます。"
    }
   ],
   "correctAnswers": [
@@ -1755,8 +1755,8 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "オンプレミスの Active Directory に保存されている ID は、Microsoft Entra ID に同期できます。",
-   "Microsoft Entra ID、サードパーティのクラウドサービス、オンプレミスの Active Directory に保存されてい る ID を使用して、Azure リソースにアクセスできます。",
-   "Azure には、Azure リソースへの安全なアクセスを提供する組み込みの認証および承認サービスがありま す。"
+   "Microsoft Entra ID、サードパーティのクラウドサービス、オンプレミスの Active Directory に保存されている ID を使用して、Azure リソースにアクセスできます。",
+   "Azure には、Azure リソースへの安全なアクセスを提供する組み込みの認証および承認サービスがあります。"
   ],
   "tfAnswers": [
    "はい",
@@ -1925,7 +1925,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "AzCopy は、ストレージアカウントとの間で BLOB またはファイルをコピーするために使用されるコマンドラ インツールです。",
+   "AzCopy は、ストレージアカウントとの間で BLOB またはファイルをコピーするために使用されるコマンドラインツールです。",
    "Azure Storage Explorer は、大量のデータの転送に使用されるクラウドホスト型の移行サービスです。",
    "Azure File Sync は、Azure Files と Windows ファイルサーバーの間でファイルとフォルダーを同期します。"
   ],
@@ -2101,7 +2101,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Microsoft Entra ID の資格情報を使用して Windows 10 を実行するコンピューターにサインインするには、 コンピューターが Azure AD に参加している必要があります。",
+   "Microsoft Entra ID の資格情報を使用して Windows 10 を実行するコンピューターにサインインするには、コンピューターが Azure AD に参加している必要があります。",
    "Microsoft Entra ID のユーザーはリソースグループを使用して分類されています。",
    "Microsoft Entra ID の動的メンバーシップルールをサポートしています。"
   ],
@@ -2425,8 +2425,8 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Azure Service Health から、Azure 環境に作成されたサービスと、Azure のすべてのサービスの正常性を 表示できます。",
-   "Azure Service Health を使用して、サービスの障害が特定の仮想マシンに影響を与えるのを防ぐことが できます。"
+   "Azure Service Health から、Azure 環境に作成されたサービスと、Azure のすべてのサービスの正常性を表示できます。",
+   "Azure Service Health を使用して、サービスの障害が特定の仮想マシンに影響を与えるのを防ぐことができます。"
   ],
   "tfAnswers": [
    "はい",
@@ -2445,7 +2445,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "従量課金制では、クラウドでホストされている仮想マシンとの間で送受信されるすべてのデータに対して固定料金を 支払います。",
+   "従量課金制では、クラウドでホストされている仮想マシンとの間で送受信されるすべてのデータに対して固定料金を支払います。",
    "従量課金制では、使用した分だけを支払うため、全体的なコストを削減できます。",
    "サーバーレスコンピューティングは、従量課金制の一例です。"
   ],
@@ -2921,7 +2921,7 @@ window.QUESTIONS = [
   "statements": [
    "クラウドコンピューティングを使用するには物理サーバーが必要です。",
    "クラウドコンピューティングを使用するにはインターネット接続が必要です。",
-   "クラウドコンピューティングの容量を増やすコストは、オンプレミスのデータセンターのコンピューティングの 容量を増やすコストよりも低くなります。"
+   "クラウドコンピューティングの容量を増やすコストは、オンプレミスのデータセンターのコンピューティングの容量を増やすコストよりも低くなります。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -3158,8 +3158,8 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "ネットワークセキュリティグループ（ NSG）は、既定ですべてのネットワークトラフィックをブロックします。",
-   "アプリケーションセキュリティグループは、ネットワークセキュリティグループ（ NSG）規則の一部として指定 できます。",
-   "ネットワークセキュリティグループ（ NSG ）には、常に受信セキュリティ規則と送信セキュリティ規則が含ま れます。"
+   "アプリケーションセキュリティグループは、ネットワークセキュリティグループ（ NSG）規則の一部として指定できます。",
+   "ネットワークセキュリティグループ（ NSG ）には、常に受信セキュリティ規則と送信セキュリティ規則が含まれます。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -3356,8 +3356,8 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Azure からの送信トラフィックのコストは、すべての Azure リージョンで同じです。",
-   "エンタープライズ契約（ EA）を通じて Azure サービスを購入するには、所定の金額を支払う必要がありま す。",
-   "Microsoft は、Azure Marketplace を通じて販売されるすべてのサードパーティサービスの価格構造を定 義します。"
+   "エンタープライズ契約（ EA）を通じて Azure サービスを購入するには、所定の金額を支払う必要があります。",
+   "Microsoft は、Azure Marketplace を通じて販売されるすべてのサードパーティサービスの価格構造を定義します。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -3907,7 +3907,7 @@ window.QUESTIONS = [
   "statements": [
    "同じ Azure サブスクリプション内に同じ名前の 2 つの Azure ストレージアカウントを持つことができます。",
    "異なる Azure リージョンで同じ名前の 2 つの Azure ストレージアカウントを持つことができます。",
-   "2 つの異なる Azure サブスクリプションで、同じ名前の 2 つの Azure ストレージアカウントを持つことがで きます。"
+   "2 つの異なる Azure サブスクリプションで、同じ名前の 2 つの Azure ストレージアカウントを持つことができます。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -4183,7 +4183,7 @@ window.QUESTIONS = [
   "statements": [
    "Azure Arc は Linux を実行する物理サーバーを管理できます。",
    "Azure Arc は、Azure Kubernetes Service（ AKS）クラスターを大規模に管理できます。",
-   "Azure Arc は、Azure の外部でホストされているサードパーティのデータベースソリューションを管理でき ます。"
+   "Azure Arc は、Azure の外部でホストされているサードパーティのデータベースソリューションを管理できます。"
   ],
   "tfAnswers": [
    "はい",
@@ -4343,7 +4343,7 @@ window.QUESTIONS = [
   "statements": [
    "Microsoft Entra ID には、Azure 仮想マシン上のドメインコントローラーが必要です。",
    "Microsoft Entra ID は、A zure と Microsoft 365 の認証サービスを提供します。",
-   "Microsoft Entra ID の各ユーザーアカウントには、Microsoft 365 ライセンスを 1 つだけ割り当てることが できます。"
+   "Microsoft Entra ID の各ユーザーアカウントには、Microsoft 365 ライセンスを 1 つだけ割り当てることができます。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -4463,7 +4463,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Platform as a Service（ PaaS）クラウドサービスの場合、オペレーティングシステムの更新は顧客の責任と なります。",
+   "Platform as a Service（ PaaS）クラウドサービスの場合、オペレーティングシステムの更新は顧客の責任となります。",
    "Infrastructure as a Service（ IaaS）クラウドサービスの場合、ネットワーク制御はマイクロソフトの責任です。",
    "Software as a Service（ SaaS）クラウドサービスの場合、ID 管理は顧客とマイクロソフトの共同責任です。"
   ],
@@ -4607,7 +4607,7 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "仮想ネットワークの作成と構成は、PaaS（ Platform as a Service）クラウドサービスモデルです。",
-   "PaaS（ Platform as a Service）クラウドサービスモデルでは、Azure Web Apps に展開したコードの更新は 顧客の責任です。",
+   "PaaS（ Platform as a Service）クラウドサービスモデルでは、Azure Web Apps に展開したコードの更新は顧客の責任です。",
    "PaaS（ Platform as a Service）クラウドサービスモデルへのユーザーアクセスの構成は顧客の責任です。"
   ],
   "tfAnswers": [
@@ -4658,7 +4658,7 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Azure リソースに割り当てることができるタグは 1 つだけです。",
-   "Azure Resource Manager（ ARM）テンプレートを使用して、Azure リソースにタグを割り当てることがで きます。",
+   "Azure Resource Manager（ ARM）テンプレートを使用して、Azure リソースにタグを割り当てることができます。",
    "タグを使用すると、Azure リソースの命名基準を適用できます。"
   ],
   "tfAnswers": [
@@ -4752,9 +4752,9 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "ネットワークセキュリティグループ (NSG) には、複数の受信および送信セキュリティ規則を含めることがで きます。",
-   "ファイアウォールの実行などの特定の機能を実行する VM は、ネットワーク仮想アプライアンスともよばれ ます。",
-   "ユーザー定義ルート（ UDR）は、単一の仮想ネットワークのサブネット間のネットワークトラフィックのみを制 御できます。"
+   "ネットワークセキュリティグループ (NSG) には、複数の受信および送信セキュリティ規則を含めることができます。",
+   "ファイアウォールの実行などの特定の機能を実行する VM は、ネットワーク仮想アプライアンスともよばれます。",
+   "ユーザー定義ルート（ UDR）は、単一の仮想ネットワークのサブネット間のネットワークトラフィックのみを制御できます。"
   ],
   "tfAnswers": [
    "はい",
@@ -5130,7 +5130,7 @@ window.QUESTIONS = [
   "statements": [
    "Azure ストレージのコールドアクセス層は、少なくとも 90 日間のデータストレージ用に最適化されています。",
    "Azure ストレージのクールアクセス層は、少なくとも 90 日間のデータストレージ用に最適化されています。",
-   "Azure ストレージのアーカイブアクセス層は、少なくとも 180 日間のデータストレージ用に最適化されてい ます。"
+   "Azure ストレージのアーカイブアクセス層は、少なくとも 180 日間のデータストレージ用に最適化されています。"
   ],
   "tfAnswers": [
    "はい",
@@ -5523,9 +5523,9 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Azure で Web アプリをホストする「サービスとしてのプラットフォーム (PaaS) 」ソリューションは、 アプリケーションをホストするオペレーティングシステムを完全に制御できます。。",
-   "Azure で Web アプリをホストする「サービスとしてのプラットフォーム (PaaS) 」ソリューションは、 プラットフォームを自動的にスケーリングする機能を提供します。",
-   "Azure で Web アプリをホストする「サービスとしてのプラットフォーム (PaaS) 」ソリューションは、 カスタムアプリケーションに継続的に機能を追加するための専門的な開発サービスを提供します。"
+   "Azure で Web アプリをホストする「サービスとしてのプラットフォーム (PaaS) 」ソリューションは、アプリケーションをホストするオペレーティングシステムを完全に制御できます。。",
+   "Azure で Web アプリをホストする「サービスとしてのプラットフォーム (PaaS) 」ソリューションは、プラットフォームを自動的にスケーリングする機能を提供します。",
+   "Azure で Web アプリをホストする「サービスとしてのプラットフォーム (PaaS) 」ソリューションは、カスタムアプリケーションに継続的に機能を追加するための専門的な開発サービスを提供します。"
   ],
   "tfAnswers": [
    "いいえ",
@@ -5546,7 +5546,7 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Azure は、資本的支出 (CapEX)と運用的支出 (OpEx)の間で柔軟性を提供します。",
-   "B2S サイズを使用する 2 つの Azure 仮想マシンを作成すると、仮想マシンでは常に同じ月額コストが発生 します。",
+   "B2S サイズを使用する 2 つの Azure 仮想マシンを作成すると、仮想マシンでは常に同じ月額コストが発生します。",
    "Azure 仮想マシンが停止した場合、仮想マシンに関連付けられたストレージコストは引き続き発生します。"
   ],
   "tfAnswers": [
@@ -5633,7 +5633,7 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "ハイブリッドクラウドモデルを実現するには、企業は常にプライベートクラウドモデルから移行する必要が あります。",
+   "ハイブリッドクラウドモデルを実現するには、企業は常にプライベートクラウドモデルから移行する必要があります。",
    "企業はパブリッククラウドを使用することで社内ネットワークの容量を拡張できます。",
    "パブリッククラウドモデルでは、社内のゲストユーザーのみがクラウド内のリソースにアクセスできます"
   ],
@@ -5783,8 +5783,8 @@ window.QUESTIONS = [
   "choices": [],
   "correctAnswers": [],
   "statements": [
-   "Platform as a Service (PaaS) ソリューションは、アプリケーションをホストするオペレーティングシステム のフルコントロールアクセスを提供します。",
-   "Platform as a Service (PaaS) ソリューションは、価格帯を変更することでアプリに追加のメモリを提供し ます。",
+   "Platform as a Service (PaaS) ソリューションは、アプリケーションをホストするオペレーティングシステムのフルコントロールアクセスを提供します。",
+   "Platform as a Service (PaaS) ソリューションは、価格帯を変更することでアプリに追加のメモリを提供します。",
    "Platform as a Service (PaaS) ソリューションは、インスタンスの数を自動的にスケーリングできます。"
   ],
   "tfAnswers": [
@@ -6096,7 +6096,7 @@ window.QUESTIONS = [
   "correctAnswers": [],
   "statements": [
    "Azure ストレージアカウントに格納されているデータは、自動的に最低でも３つのデータコピーを持ちます。",
-   "Azure ストレージアカウントに格納されているデータは、他の Azure のデータセンターに自動的にバックア ップされます。",
+   "Azure ストレージアカウントに格納されているデータは、他の Azure のデータセンターに自動的にバックアップされます。",
    "Azure ストレージアカウントには、最大 2 TB のデータと最大 100 万個のファイルを含めることができます。"
   ],
   "tfAnswers": [
@@ -6336,7 +6336,7 @@ window.QUESTIONS = [
   "statements": [
    "Azure Advisor は、Microsoft Entra 環境のセキュリティを向上するための推奨事項を提供します。",
    "Azure Advisor は、稼働している Azure 仮想マシンのコストを削減するための推奨事項を提供します。",
-   "Azure Advisor は、Azure 仮想マシン上のネットワーク設定を構成する方法に関する推奨事項を提供し ます。"
+   "Azure Advisor は、Azure 仮想マシン上のネットワーク設定を構成する方法に関する推奨事項を提供します。"
   ],
   "tfAnswers": [
    "はい",
