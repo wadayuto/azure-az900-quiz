@@ -145,7 +145,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "5.1.1「仮想ネットワークとサブネット」",
-  "explanation": "異なる仮想ネットワークに展開されている仮想マシン同士は接続する事はできません。したがって、VM1 を\n他の仮想マシンと接続させたくない場合は、VM1 を他の仮想マシンとは異なる仮想ネットワークに配置します。"
+  "explanation": "異なる仮想ネットワークに展開されている仮想マシン同士は接続する事はできません。したがって、VM1 を\n他の仮想マシンと接続させたくない場合は、VM1 を他の仮想マシンとは異なる仮想ネットワークに配置します。",
+  "diagram": "virtual-network"
  },
  {
   "id": "q6",
@@ -223,7 +224,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.1.1「 Azure Policy」",
-  "explanation": "Azure Policy を使用すると、Azure 環境にさまざまなルールが適用できるため、会社のルールに準拠した運\n用を行うことができます。\nたとえば Azure Policy では、次のようなポリシーを構成できます。\n•作成できる仮想マシンのサイズ制限\n•仮想ネットワークなどの特定のリソースの作成の拒否\n•使用できるリージョンの制限"
+  "explanation": "Azure Policy を使用すると、Azure 環境にさまざまなルールが適用できるため、会社のルールに準拠した運\n用を行うことができます。\nたとえば Azure Policy では、次のようなポリシーを構成できます。\n•作成できる仮想マシンのサイズ制限\n•仮想ネットワークなどの特定のリソースの作成の拒否\n•使用できるリージョンの制限",
+  "diagram": "governance"
  },
  {
   "id": "q9",
@@ -389,7 +391,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "7.1.2「 Azure Active Directory(Microsoft Entra ID)」",
-  "explanation": "サブスクリプションは必ず Microsoft Entra テナント(Azure AD)に紐づきます。サブスクリプションの契約時\nに Microsoft Entra テナントが無い場合は、そのタイミングで新しく Microsoft Entra テナントが作成されます。\nサブスクリプションに仮想マシンなどを作成するには、サブスクリプションが関連づいている Microsoft Entra\nテナントにユーザーを作成し、そのユーザーで Azure portal などにサインインする必要があります。したがって\n正解は D になります。"
+  "explanation": "サブスクリプションは必ず Microsoft Entra テナント(Azure AD)に紐づきます。サブスクリプションの契約時\nに Microsoft Entra テナントが無い場合は、そのタイミングで新しく Microsoft Entra テナントが作成されます。\nサブスクリプションに仮想マシンなどを作成するには、サブスクリプションが関連づいている Microsoft Entra\nテナントにユーザーを作成し、そのユーザーで Azure portal などにサインインする必要があります。したがって\n正解は D になります。",
+  "diagram": "identity-auth"
  },
  {
   "id": "q16",
@@ -532,7 +535,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "4.1.1「 Azure Virtual Machines (仮想マシン)」、5.1.1「仮想ネットワークとサブネット」",
-  "explanation": "仮想マシンは必ず仮想ネットワーク内に作成しなければなりません。仮想ネットワークなしで仮想マシンを作\n成する事はできません。"
+  "explanation": "仮想マシンは必ず仮想ネットワーク内に作成しなければなりません。仮想ネットワークなしで仮想マシンを作\n成する事はできません。",
+  "diagram": "virtual-network"
  },
  {
   "id": "q21",
@@ -614,7 +618,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.1.2「リソースロック」",
-  "explanation": "Azure リソースには、複数のロックを構成できます。読み取り専用ロックが構成されているリソースに、読み\n取り専用ロックや削除ロックを追加できます。また、削除ロックが構成されている場合も同様です。"
+  "explanation": "Azure リソースには、複数のロックを構成できます。読み取り専用ロックが構成されているリソースに、読み\n取り専用ロックや削除ロックを追加できます。また、削除ロックが構成されている場合も同様です。",
+  "diagram": "governance"
  },
  {
   "id": "q24",
@@ -696,7 +701,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "3.2.2「 Azure PowerShell」",
-  "explanation": "Azure を操作するための PowerShell スクリプトを実行するには、Azure PowerShell が必要です。"
+  "explanation": "Azure を操作するための PowerShell スクリプトを実行するには、Azure PowerShell が必要です。",
+  "diagram": "management-tools",
+  "supplement": "Azure をコマンドで操作する方法のひとつが PowerShell です。Azure 用のコマンド群（Azure PowerShell モジュール）を使うことで、リソース作成などの操作をスクリプト化して自動実行できます。"
  },
  {
   "id": "q28",
@@ -734,7 +741,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "5.1.4「オンプレミスネットワークとの接続」",
-  "explanation": "オンプレミスの PC を Azure の仮想ネットワークに接続するには、サイト間 VPN を使用できます。サイト間 V PN を構\n成するには、Azure の仮想ネットワークに「 GatewaySubnet」というサブネットを作成し、そのサブネットに VPN ゲートウ\nェイを作成します。"
+  "explanation": "オンプレミスの PC を Azure の仮想ネットワークに接続するには、サイト間 VPN を使用できます。サイト間 V PN を構\n成するには、Azure の仮想ネットワークに「 GatewaySubnet」というサブネットを作成し、そのサブネットに VPN ゲートウ\nェイを作成します。",
+  "diagram": "connectivity"
  },
  {
   "id": "q29",
@@ -759,7 +767,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "6.1.3「ストレージアカウントの冗長化オプション」",
-  "explanation": "別のリージョンにデータのバックアップ（レプリカ）を保持するには、GRS または GZRS 以上の冗長化オプシ\nョンを選択する必要があります。"
+  "explanation": "別のリージョンにデータのバックアップ（レプリカ）を保持するには、GRS または GZRS 以上の冗長化オプシ\nョンを選択する必要があります。",
+  "diagram": "backup-recovery"
  },
  {
   "id": "q30",
@@ -872,7 +881,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "3.2.5「 Azure Mobile Apps（モバイルアプリ）」",
-  "explanation": "iOS のデバイスを使用して Azure リソースを管理するには、Azure Mobile Apps を使用して Cloud Shell を\n起動するか、Safari などのブラウザーを使用して Azure portal にアクセスします。"
+  "explanation": "iOS のデバイスを使用して Azure リソースを管理するには、Azure Mobile Apps を使用して Cloud Shell を\n起動するか、Safari などのブラウザーを使用して Azure portal にアクセスします。",
+  "diagram": "management-tools"
  },
  {
   "id": "q35",
@@ -944,7 +954,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "5.1.4「オンプレミスネットワークとの接続」",
-  "explanation": "オンプレミスと Azure の仮想ネットワークを接続するには、サイト間 VPN を構成します。サイト間 VPN を構\n成するには、Azure の仮想ネットワークに「 GatewaySubnet」サブネットを作成し、そのサブネットに VPN ゲート\nウェイを作成します。更に、オンプレミス側の VPN アプライアンス(VPN デバイス)を指すローカルネットワークゲ\nートウェイを作成する必要があります。ローカルネットワークゲートウェイには、オンプレミスのアドレス空間と接\n続先となる VPN デバイスの IP アドレスなどを指定します。"
+  "explanation": "オンプレミスと Azure の仮想ネットワークを接続するには、サイト間 VPN を構成します。サイト間 VPN を構\n成するには、Azure の仮想ネットワークに「 GatewaySubnet」サブネットを作成し、そのサブネットに VPN ゲート\nウェイを作成します。更に、オンプレミス側の VPN アプライアンス(VPN デバイス)を指すローカルネットワークゲ\nートウェイを作成する必要があります。ローカルネットワークゲートウェイには、オンプレミスのアドレス空間と接\n続先となる VPN デバイスの IP アドレスなどを指定します。",
+  "diagram": "connectivity"
  },
  {
   "id": "q37",
@@ -1319,7 +1330,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "7.1.5「 Azure Active Directory(Microsoft Entra ID)のライセンスと主な機能」",
-  "explanation": "Microsoft Entra ID Protection(Azure AD Identity Protection) サービスは、ユーザーID やサインイン動作の\nリスクを AI などで検出するサービスです。"
+  "explanation": "Microsoft Entra ID Protection(Azure AD Identity Protection) サービスは、ユーザーID やサインイン動作の\nリスクを AI などで検出するサービスです。",
+  "diagram": "identity-auth"
  },
  {
   "id": "q53",
@@ -1451,7 +1463,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "「 2.2.4 サービスレベルアグリーメント(SLA)」",
-  "explanation": "Microsoft Azure では、提供されるクラウドサービスのサービス水準を明確にするために、サービスレベルア\nグリーメント(SLA)が定められています。SLA とは、クラウドサービスプロバイダーと利用者との間で結ばれるサ\nービスレベルに関する合意事項のことです。"
+  "explanation": "Microsoft Azure では、提供されるクラウドサービスのサービス水準を明確にするために、サービスレベルア\nグリーメント(SLA)が定められています。SLA とは、クラウドサービスプロバイダーと利用者との間で結ばれるサ\nービスレベルに関する合意事項のことです。",
+  "diagram": "sla"
  },
  {
   "id": "q57",
@@ -1484,7 +1497,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "2.2.4「サービスレベルアグリーメント(SLA)」",
-  "explanation": "正式リリース(一般提供： GA)前の「プレビュー」と呼ばれる期間中は SLA の対象外となっています。"
+  "explanation": "正式リリース(一般提供： GA)前の「プレビュー」と呼ばれる期間中は SLA の対象外となっています。",
+  "diagram": "sla",
+  "supplement": "「プレビュー」は正式リリース前のお試し公開段階で、品質保証（SLA）の対象外です。本番の重要システムには、一般提供（GA）になったサービスを使うのが基本です。"
  },
  {
   "id": "q58",
@@ -1607,7 +1622,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.2.1「 Azure Advisor」",
-  "explanation": "Azure Advisor とは、Azure のベストプラクティスに従って Azure リソースの構築や運用に関するアドバイス\nを行ってくれるサービスです。Azure Advisor を使用すると、サブスクリプション内にある Azure リソースの構\n成や利用統計情報を自動的に分析し、コストの費用対効果、セキュリティ、信頼性（高可用性）、パフォーマン\nスを向上させるための推奨事項が提供されます。そのため、ユーザーはサブスクリプションの環境がベストプラ\nクティスに従っているかを確認しながら、システムを構築することができます。"
+  "explanation": "Azure Advisor とは、Azure のベストプラクティスに従って Azure リソースの構築や運用に関するアドバイス\nを行ってくれるサービスです。Azure Advisor を使用すると、サブスクリプション内にある Azure リソースの構\n成や利用統計情報を自動的に分析し、コストの費用対効果、セキュリティ、信頼性（高可用性）、パフォーマン\nスを向上させるための推奨事項が提供されます。そのため、ユーザーはサブスクリプションの環境がベストプラ\nクティスに従っているかを確認しながら、システムを構築することができます。",
+  "diagram": "cost-tools"
  },
  {
   "id": "q63",
@@ -1662,7 +1678,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "2.2.4「サービスレベルアグリーメント(SLA)」",
-  "explanation": "Azure で提供されるサービスが、マイクロソフト側の原因によって SLA 水準を下回った場合、Azure 利用者\nは Azure 利用料金の返金を受けることができます。ただし、返金は現金で支払われるわけではなく、顧客に\n「サービスクレジット」という形で付与され、その金額が利用料金から割り引かれます。"
+  "explanation": "Azure で提供されるサービスが、マイクロソフト側の原因によって SLA 水準を下回った場合、Azure 利用者\nは Azure 利用料金の返金を受けることができます。ただし、返金は現金で支払われるわけではなく、顧客に\n「サービスクレジット」という形で付与され、その金額が利用料金から割り引かれます。",
+  "diagram": "sla"
  },
  {
   "id": "q65",
@@ -2186,7 +2203,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.1.3「クラウドモデルとは」",
-  "explanation": "オンプレミスのサーバーをすべてクラウドに移行すると、設備投資は最小限になりますが、その分利用した\n分の運用コストが発生します。したがって、クラウドサービスプロバイダーのリソースとオンプレミスのリソース\nをバランスよく利用するハイブリッドクラウドが、設備投資と運用コストを最小限に抑えることができます。"
+  "explanation": "オンプレミスのサーバーをすべてクラウドに移行すると、設備投資は最小限になりますが、その分利用した\n分の運用コストが発生します。したがって、クラウドサービスプロバイダーのリソースとオンプレミスのリソース\nをバランスよく利用するハイブリッドクラウドが、設備投資と運用コストを最小限に抑えることができます。",
+  "diagram": "capex-opex",
+  "supplement": "オンプレミスでサーバーを買い足すのは CapEx（初期に大きな前払い）。クラウドで必要なときだけ借りるのは OpEx（使った分だけ支払い）です。需要が読めないときは、前払いの要らない OpEx 型のクラウドが有利になりやすいです。"
  },
  {
   "id": "q85",
@@ -2219,7 +2238,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "3.5.2「料金計算ツールと総保有コスト（ TCO ）計算ツール」",
-  "explanation": "Azure では「料金計算ツール」と「 TCO 計算ツール」という 2 種類の料金見積もりツールを公開しています。\n料金計算ツールはリソースの積み上げでコストを算出するのに対し、総所有コスト(TCO)計算ツールはシナリオ\nベースでコストを予測します。オンプレミスのサーバー類を Azure に移行した場合の削減額を試算するのは、\nTCO 計算ツールです。したがって、正解は C です。"
+  "explanation": "Azure では「料金計算ツール」と「 TCO 計算ツール」という 2 種類の料金見積もりツールを公開しています。\n料金計算ツールはリソースの積み上げでコストを算出するのに対し、総所有コスト(TCO)計算ツールはシナリオ\nベースでコストを予測します。オンプレミスのサーバー類を Azure に移行した場合の削減額を試算するのは、\nTCO 計算ツールです。したがって、正解は C です。",
+  "diagram": "cost-tools"
  },
  {
   "id": "q86",
@@ -2309,7 +2329,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.2.1「 Azure Advisor」",
-  "explanation": "Azure Advisor は、十分に活用されていない仮想マシンを特定し、コストの削減方法に関する推奨事項を\n提供します。"
+  "explanation": "Azure Advisor は、十分に活用されていない仮想マシンを特定し、コストの削減方法に関する推奨事項を\n提供します。",
+  "diagram": "cost-tools"
  },
  {
   "id": "q89",
@@ -2516,7 +2537,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "3.5.3「コストの管理ツール」",
-  "explanation": "予算アラートツールで「予算」を設定すると、Azure の利用料金があらかじめ設定された予算額を超過した\n場合に、メールなどの手段で管理者に通知することができます。予算アラートを構成するには、最初に Azure\nの月額、四半期額もしくは年額の予算額を設定します。"
+  "explanation": "予算アラートツールで「予算」を設定すると、Azure の利用料金があらかじめ設定された予算額を超過した\n場合に、メールなどの手段で管理者に通知することができます。予算アラートを構成するには、最初に Azure\nの月額、四半期額もしくは年額の予算額を設定します。",
+  "diagram": "cost-tools"
  },
  {
   "id": "q96",
@@ -2667,7 +2689,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.2.1「 IaaS (Infrastructure as a Service)」",
-  "explanation": "Azure の仮想マシンは IaaS です。IaaS は、クラウドサービスプロバイダーがハードウェアと物理サーバーを管\n理します。したがって、移行後に管理責任が軽減するのは、故障したサーバーハードウェアの交換と物理サー\nバーのセキュリティの管理です。"
+  "explanation": "Azure の仮想マシンは IaaS です。IaaS は、クラウドサービスプロバイダーがハードウェアと物理サーバーを管\n理します。したがって、移行後に管理責任が軽減するのは、故障したサーバーハードウェアの交換と物理サー\nバーのセキュリティの管理です。",
+  "diagram": "backup-recovery"
  },
  {
   "id": "q101",
@@ -2832,7 +2855,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "5.1.4 「オンプレミスネットワークとの接続」",
-  "explanation": "VPN ゲートウェイを使用する「ポイント対サイト VPN 接続」を利用すると、インターネット上のユーザーは自\n分のデバイスを VPN で A zure の仮想ネットワークに接続することができます。"
+  "explanation": "VPN ゲートウェイを使用する「ポイント対サイト VPN 接続」を利用すると、インターネット上のユーザーは自\n分のデバイスを VPN で A zure の仮想ネットワークに接続することができます。",
+  "diagram": "connectivity"
  },
  {
   "id": "q106",
@@ -2902,7 +2926,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.1.2 「リソースロック」",
-  "explanation": "リソースロックは、すべてのリソースに割り当てることができます。一方、Azure Blueprints、Azure Policy は\n直接リソースに割り当てることはできません。またサービスエンドポイントは、ストレージアカウントや Azure\nSQL Database など一部のサービスにのみ割り当てることができます。"
+  "explanation": "リソースロックは、すべてのリソースに割り当てることができます。一方、Azure Blueprints、Azure Policy は\n直接リソースに割り当てることはできません。またサービスエンドポイントは、ストレージアカウントや Azure\nSQL Database など一部のサービスにのみ割り当てることができます。",
+  "diagram": "governance"
  },
  {
   "id": "q108",
@@ -3023,7 +3048,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "5.1.1「仮想ネットワークとサブネット」",
-  "explanation": "仮想ネットワーク間は既定で通信できないようになっています。他の仮想マシンと通信させたくない場合は、\n異なる仮想ネットワークに仮想マシンを配置することで実現できます。したがって仮想ネットワークの機能は、\n分離とセグメンテーションです。"
+  "explanation": "仮想ネットワーク間は既定で通信できないようになっています。他の仮想マシンと通信させたくない場合は、\n異なる仮想ネットワークに仮想マシンを配置することで実現できます。したがって仮想ネットワークの機能は、\n分離とセグメンテーションです。",
+  "diagram": "virtual-network",
+  "supplement": "仮想ネットワーク（VNet）は、クラウド上に作る“自分専用のネットワーク”です。中をサブネットで区切り、VM などのリソースを配置して、安全に通信させます。"
  },
  {
   "id": "q112",
@@ -3053,7 +3080,8 @@ window.QUESTIONS = [
   "tfAnswers": [],
   "review": "5.1.4「オンプレミスネットワークとの接続」",
   "explanation": "サイト間 VPN は、Azure の仮想ネットワークとオンプレミスのネットワークを VPN で接続する方法です。",
-  "supplement": "サイト間（Site-to-Site）VPN は、会社のネットワークと Azure の仮想ネットワークを、暗号化したトンネルでつなぐ方法です。インターネット越しでも安全に、社内とクラウドを 1 つのネットワークのように扱えます。"
+  "supplement": "サイト間（Site-to-Site）VPN は、会社のネットワークと Azure の仮想ネットワークを、暗号化したトンネルでつなぐ方法です。インターネット越しでも安全に、社内とクラウドを 1 つのネットワークのように扱えます。",
+  "diagram": "connectivity"
  },
  {
   "id": "q113",
@@ -3427,7 +3455,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "3.2.4「 Azure Cloud Shell」",
-  "explanation": "Azure Cloud Shell は Azure portal 内や Azure Mobile Apps 内でコマンドを実行できる環境です。"
+  "explanation": "Azure Cloud Shell は Azure portal 内や Azure Mobile Apps 内でコマンドを実行できる環境です。",
+  "diagram": "management-tools"
  },
  {
   "id": "q127",
@@ -3732,7 +3761,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "3.2.1「 Azure portal」、3.2.4「 Azure Cloud Shell」",
-  "explanation": "iPhone などモバイルデバイスで Azure のリソースを管理するには次の方法があります。\n・ Azure Mobile Apps を使用する\n・ Safari などのブラウザーを使用して Azure portal にアクセスする\n・ Azure Mobile Apps、Azure portal で Cloud Shell を起動しコマンドやスクリプトを実行する"
+  "explanation": "iPhone などモバイルデバイスで Azure のリソースを管理するには次の方法があります。\n・ Azure Mobile Apps を使用する\n・ Safari などのブラウザーを使用して Azure portal にアクセスする\n・ Azure Mobile Apps、Azure portal で Cloud Shell を起動しコマンドやスクリプトを実行する",
+  "diagram": "management-tools"
  },
  {
   "id": "q140",
@@ -3798,7 +3828,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "2.2.4 「サービスレベルアグレ―メント(SLA)」",
-  "explanation": "Microsoft Azure では、提供されるクラウドサービスのサービス水準を明確にするために、サービスレベルア\nグリーメント(SLA)が定められています。SLA は主に月間稼働率がサービス水準として設定されています。"
+  "explanation": "Microsoft Azure では、提供されるクラウドサービスのサービス水準を明確にするために、サービスレベルア\nグリーメント(SLA)が定められています。SLA は主に月間稼働率がサービス水準として設定されています。",
+  "diagram": "sla"
  },
  {
   "id": "q143",
@@ -5006,7 +5037,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.1.2「クラウドを利用するメリット」",
-  "explanation": "可用性とはシステムが停止する頻度や時間が極力するないことを指します。そして稼働率とはサービスが\n正常に稼働している割合を意味します。稼働率 99.999%は 1 年間で 5 分 15 秒、稼働率 99.9%は年間 8.76\n時間停止することに相当します。したがって、稼働率 99.999%の方が 99.9%よりもサービスの信頼性が高いと\nいうことになります。"
+  "explanation": "可用性とはシステムが停止する頻度や時間が極力するないことを指します。そして稼働率とはサービスが\n正常に稼働している割合を意味します。稼働率 99.999%は 1 年間で 5 分 15 秒、稼働率 99.9%は年間 8.76\n時間停止することに相当します。したがって、稼働率 99.999%の方が 99.9%よりもサービスの信頼性が高いと\nいうことになります。",
+  "diagram": "sla"
  },
  {
   "id": "q185",
@@ -5204,7 +5236,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.2.1「 Azure Advisor」",
-  "explanation": "Azure Advisor とは、Azure のベストプラクティス(最善の方法 )に従って A zure リソースの構築や運用に関\nするアドバイスを行ってくれるサービスです。Azure Advisor が提供する推奨事項は、5 つのカテゴリーに分類\nされます。\n•コスト\n•セキュリティ\n•信頼性\n•パフォーマンス\n•オペレーショナルエクセレンス"
+  "explanation": "Azure Advisor とは、Azure のベストプラクティス(最善の方法 )に従って A zure リソースの構築や運用に関\nするアドバイスを行ってくれるサービスです。Azure Advisor が提供する推奨事項は、5 つのカテゴリーに分類\nされます。\n•コスト\n•セキュリティ\n•信頼性\n•パフォーマンス\n•オペレーショナルエクセレンス",
+  "diagram": "cost-tools"
  },
  {
   "id": "q196",
@@ -5292,7 +5325,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "6.1.5「 BLOB のアクセス層」",
-  "explanation": "クールアクセス層は、短期バックアップデータなどの読み取りや変更の頻度が低いデータの保存に最適です。\nホットアクセス層に比べて、ストレージコストが低くアクセスコストが高く設定されており、最低 30 日間は削除\nせずに置いておく必要があります。30 日以内に削除すると、早期削除料金が発生します。"
+  "explanation": "クールアクセス層は、短期バックアップデータなどの読み取りや変更の頻度が低いデータの保存に最適です。\nホットアクセス層に比べて、ストレージコストが低くアクセスコストが高く設定されており、最低 30 日間は削除\nせずに置いておく必要があります。30 日以内に削除すると、早期削除料金が発生します。",
+  "diagram": "backup-recovery"
  },
  {
   "id": "q201",
@@ -5325,7 +5359,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "2.24「サービスレベルアグリーメント(SLA)」",
-  "explanation": "SLA とは、クラウドサービスプロバイダーと利用者との間で結ばれるサービスのレベルに関する合意事項の\n事です。サービスの継続稼働 (可用性 )のレベルを保証するのが SLA です。"
+  "explanation": "SLA とは、クラウドサービスプロバイダーと利用者との間で結ばれるサービスのレベルに関する合意事項の\n事です。サービスの継続稼働 (可用性 )のレベルを保証するのが SLA です。",
+  "diagram": "sla"
  },
  {
   "id": "q202",
@@ -5711,7 +5746,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.1.2 「クラウドを利用するメリット」",
-  "explanation": "Azure Site Recovery は災害対策を目的に仮想マシンを他のリージョンなどに複製するサービスです。"
+  "explanation": "Azure Site Recovery は災害対策を目的に仮想マシンを他のリージョンなどに複製するサービスです。",
+  "diagram": "backup-recovery"
  },
  {
   "id": "q215",
@@ -5806,7 +5842,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.1． 2 「クラウドを利用するメリット」",
-  "explanation": "オンプレミスのデータセンターで運用している Hyper-V 仮想マシンにはハードウェアなどの設備投資が発生\nしているため、支出モデルは「資本的支出 (Capital Expenditure： CapEx)」になります。それを Azure に移行す\nると、設備投資は不要となり代わりに月々発生する運用コスト(Operational Expenditure： OpEx)が発生しま\nす。"
+  "explanation": "オンプレミスのデータセンターで運用している Hyper-V 仮想マシンにはハードウェアなどの設備投資が発生\nしているため、支出モデルは「資本的支出 (Capital Expenditure： CapEx)」になります。それを Azure に移行す\nると、設備投資は不要となり代わりに月々発生する運用コスト(Operational Expenditure： OpEx)が発生しま\nす。",
+  "diagram": "capex-opex"
  },
  {
   "id": "q218",
@@ -6054,7 +6091,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1． 1.2 「クラウドを利用するメリット」",
-  "explanation": "クラウドコンピューティングのメリットとしては、次のようなものがあります。\n•コスト削減（資本的支出から運用支出へ）\n•障害対策機能（高可用性、フォールトトレランス、災害対策など）\n•高いスケーラビリティ（自動スケール機能など）\n•機敏性のあるシステム構築（管理ポータルからの簡単な操作）\nしたがって、正解は A と D です。"
+  "explanation": "クラウドコンピューティングのメリットとしては、次のようなものがあります。\n•コスト削減（資本的支出から運用支出へ）\n•障害対策機能（高可用性、フォールトトレランス、災害対策など）\n•高いスケーラビリティ（自動スケール機能など）\n•機敏性のあるシステム構築（管理ポータルからの簡単な操作）\nしたがって、正解は A と D です。",
+  "diagram": "capex-opex"
  },
  {
   "id": "q227",
@@ -6856,7 +6894,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.1.2 「リソースロック」",
-  "explanation": "削除ロックがセットされたリソースを削除するには、削除ロックを削除してから行う必要があります。"
+  "explanation": "削除ロックがセットされたリソースを削除するには、削除ロックを削除してから行う必要があります。",
+  "diagram": "governance",
+  "supplement": "リソースロックは、うっかり消したり変更したりするのを防ぐ「カギ」です。『削除禁止』と『読み取り専用』の2種類があり、ロックがかかっているリソースを消すには、先にロックを外す必要があります。"
  },
  {
   "id": "q257",
