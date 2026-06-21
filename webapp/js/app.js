@@ -702,6 +702,20 @@ function linkifyServices(container) {
 // 解説要素にサービス連携（本文リンク化＋関連チップ）を適用
 function attachServiceLinks(expEl, q) {
   if (!expEl) return;
+  // 補足解説（管理しやすいよう解説本文とは別枠で表示）
+  if (q.supplement) {
+    const sup = el("div", "exp-supplement");
+    sup.innerHTML = `<div class="sup-label">📘 もっとやさしく</div><div class="sup-body">${formatText(q.supplement)}</div>`;
+    linkifyServices(sup.querySelector(".sup-body"));
+    expEl.appendChild(sup);
+  }
+  // 図解（diagrams.js の id を参照。複数問で使い回し）
+  if (q.diagram && window.DIAGRAMS && window.DIAGRAMS[q.diagram]) {
+    const d = window.DIAGRAMS[q.diagram];
+    const fig = el("figure", "exp-figure");
+    fig.innerHTML = `<div class="fig-wrap">${d.svg}</div>` + (d.title ? `<figcaption>${esc(d.title)}</figcaption>` : "");
+    expEl.appendChild(fig);
+  }
   linkifyServices(expEl.querySelector(".exp-body"));
   const chips = relatedServiceChips(`${q.text}\n${q.explanation || ""}\n${q.review || ""}`);
   if (chips) expEl.appendChild(chips);
