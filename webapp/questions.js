@@ -447,7 +447,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.1.2「クラウドを利用するメリット」",
-  "explanation": "多くのクラウドサービスには、動的にリソースの割り当てを変更できる自動スケールの機能があります。これ\nを弾力性といいます。この自動スケール機能により、使用率が高い時は動的に割り当てを追加し、使用率が\n低い時には動的に割り当てを減らすことにより、コストを削減する事ができます。"
+  "explanation": "多くのクラウドサービスには、動的にリソースの割り当てを変更できる自動スケールの機能があります。これ\nを弾力性といいます。この自動スケール機能により、使用率が高い時は動的に割り当てを追加し、使用率が\n低い時には動的に割り当てを減らすことにより、コストを削減する事ができます。",
+  "diagram": "cloud-benefits"
  },
  {
   "id": "q18",
@@ -1173,7 +1174,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.1.4「 Service Trust Portal とトラストセンター」",
-  "explanation": "Service Trust Portal は、マイクロソフトのクラウドサービスが取得した国際規格の認定（ ISO や PCI など）に\nついての監査レポートやホワイトペーパーなどの、コンプライアンスに関連する情報を公開している Web サイト\nです。"
+  "explanation": "Service Trust Portal は、マイクロソフトのクラウドサービスが取得した国際規格の認定（ ISO や PCI など）に\nついての監査レポートやホワイトペーパーなどの、コンプライアンスに関連する情報を公開している Web サイト\nです。",
+  "diagram": "compliance",
+  "supplement": "マイクロソフトの監査レポートやコンプライアンス関連情報を入手できるのが Service Trust Portal です。第三者監査の結果や規制対応の資料をダウンロードできます。"
  },
  {
   "id": "q47",
@@ -1589,7 +1592,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "6.1.6「 Azure Files（ファイル共有）」",
-  "explanation": "Azure Files（ファイル共有）を使用して、「ネットワークドライブの割り当て」を行うことができます。ネットワ\nークドライブの割り当てを行うと、ユーザーはあたかもローカルディスク(C ドライブや D ドライブ)にアクセスし\nているかのように、Azure 上のファイル共有にアクセスできます。"
+  "explanation": "Azure Files（ファイル共有）を使用して、「ネットワークドライブの割り当て」を行うことができます。ネットワ\nークドライブの割り当てを行うと、ユーザーはあたかもローカルディスク(C ドライブや D ドライブ)にアクセスし\nているかのように、Azure 上のファイル共有にアクセスできます。",
+  "diagram": "storage-types",
+  "supplement": "ネットワークドライブ（共有フォルダ）としてマウントして使いたいときは Azure Files を作成します。Windows や Mac から、社内のファイルサーバーと同じ感覚で接続できます。"
  },
  {
   "id": "q62",
@@ -2462,7 +2467,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "7.2.3「 Microsoft Defender for Cloud」",
-  "explanation": "Just-In-Time VM アクセスとは、必要な時にだけ NSG に RDP 接続などを許可するルールを構成できる機\n能です。この機能により、狙われやすい RDP 接続や SSH 接続を許可したままにする必要がないため、不正に\nアクセスされてしまうことを極力防ぐことができます。この機能は、Microsoft Defender for Cloud により提\n供されます。"
+  "explanation": "Just-In-Time VM アクセスとは、必要な時にだけ NSG に RDP 接続などを許可するルールを構成できる機\n能です。この機能により、狙われやすい RDP 接続や SSH 接続を許可したままにする必要がないため、不正に\nアクセスされてしまうことを極力防ぐことができます。この機能は、Microsoft Defender for Cloud により提\n供されます。",
+  "diagram": "security-services"
  },
  {
   "id": "q93",
@@ -2609,7 +2615,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.2.3「 Azure Monitor（モニター）」",
-  "explanation": "Azure Monitor で収集したログやメトリックは、Lo g Analytics ワークスペースに保存できます。ログのクエリ\nは、Log Analytics ワークスペースと Azure Monitor の「ログ」メニューから実行できます。"
+  "explanation": "Azure Monitor で収集したログやメトリックは、Lo g Analytics ワークスペースに保存できます。ログのクエリ\nは、Log Analytics ワークスペースと Azure Monitor の「ログ」メニューから実行できます。",
+  "diagram": "monitoring"
  },
  {
   "id": "q98",
@@ -2752,7 +2759,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "",
-  "explanation": "参照：最新の試験情報ファイルの「サポートプラン」\nAzure には、現在提供しているサポートプランとして、「 Basic」、「 Developer」、「 Standard」、「 Professional\nDirect 」の 4 種類があります。新しいサポートリクエストは、すべてのプランで利用可能です。したがって、\nPremier 以外の４つが正解です。"
+  "explanation": "参照：最新の試験情報ファイルの「サポートプラン」\nAzure には、現在提供しているサポートプランとして、「 Basic」、「 Developer」、「 Standard」、「 Professional\nDirect 」の 4 種類があります。新しいサポートリクエストは、すべてのプランで利用可能です。したがって、\nPremier 以外の４つが正解です。",
+  "diagram": "support-plans"
  },
  {
   "id": "q103",
@@ -2785,7 +2793,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "4.1.3 「 Azure App Service」",
-  "explanation": "カスタムドメイン、10GB 以上のストレージ、専用のインスタンス、インスタンス間の負荷分散をサポートしてい\nるのは Basic 以上です。したがって正解は B です。"
+  "explanation": "カスタムドメイン、10GB 以上のストレージ、専用のインスタンス、インスタンス間の負荷分散をサポートしてい\nるのは Basic 以上です。したがって正解は B です。",
+  "diagram": "compute-options"
  },
  {
   "id": "q104",
@@ -2818,7 +2827,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "4.1.3 「 Azure App Service」",
-  "explanation": "カスタムドメイン、複数インスタンス、SSL サポートは「 Basic」以上でサポートしています。12GB 以上のストレー\nジをサポートしているのは、「 Standard」以上でサポートしています。したがって正解は A になります。"
+  "explanation": "カスタムドメイン、複数インスタンス、SSL サポートは「 Basic」以上でサポートしています。12GB 以上のストレー\nジをサポートしているのは、「 Standard」以上でサポートしています。したがって正解は A になります。",
+  "diagram": "compute-options"
  },
  {
   "id": "q105",
@@ -3114,7 +3124,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.2.3「 Azure Monitor(モニター)」",
-  "explanation": "Application Insights は Azure Monitor のサービスの１つで、Web アプリケーションを監視することができ\nます。"
+  "explanation": "Application Insights は Azure Monitor のサービスの１つで、Web アプリケーションを監視することができ\nます。",
+  "diagram": "monitoring",
+  "supplement": "Application Insights は Azure Monitor の一機能で、Web アプリの応答速度・エラー・利用状況などを監視します。ページの読み込み時間や例外の発生を可視化し、性能の問題を見つけられます。"
  },
  {
   "id": "q114",
@@ -3147,7 +3159,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "6.1.1「ストレージアカウントとは」",
-  "explanation": "ストレージアカウントの Azure BLOB には、大きなサイズの画像ファイルや動画フィル、Excel ファイル、PDF フ\nァイル、圧縮ファイルなどのデータを格納できます。"
+  "explanation": "ストレージアカウントの Azure BLOB には、大きなサイズの画像ファイルや動画フィル、Excel ファイル、PDF フ\nァイル、圧縮ファイルなどのデータを格納できます。",
+  "diagram": "storage-types",
+  "supplement": "Blob Storage は、画像・動画・バックアップなど“あらゆる種類のファイル（オブジェクト）”を大量に保存するための保管庫です。容量を気にせず置け、世界中からアクセスできます。"
  },
  {
   "id": "q115",
@@ -3202,7 +3216,9 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "7.2.3「 Microsoft Defender for Cloud」",
-  "explanation": "Microsoft Defender for Cloud は、クラウドネイティブアプリケーション保護プラットフォーム(CNAPP)で、さ\nまざまなサイバー脅威や脆弱性からリソースを保護するのに役立ちます。Microsoft Defender for Cloud のセ\nキュアスコアは、Azure リソースの設定値をシステムによって自動的に評価し、数値化します。"
+  "explanation": "Microsoft Defender for Cloud は、クラウドネイティブアプリケーション保護プラットフォーム(CNAPP)で、さ\nまざまなサイバー脅威や脆弱性からリソースを保護するのに役立ちます。Microsoft Defender for Cloud のセ\nキュアスコアは、Azure リソースの設定値をシステムによって自動的に評価し、数値化します。",
+  "diagram": "security-services",
+  "supplement": "セキュアスコアは「クラウドの安全性の点数」で、Microsoft Defender for Cloud で確認します。点数が低い項目＝弱点なので、推奨対応をこなして点数を上げていきます。"
  },
  {
   "id": "q117",
@@ -4072,7 +4088,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.2.3「 Azure Monitor(モニター)」",
-  "explanation": "Azure Monitor の Application Insights で、Web アプリケーションを監視することができます。"
+  "explanation": "Azure Monitor の Application Insights で、Web アプリケーションを監視することができます。",
+  "diagram": "monitoring"
  },
  {
   "id": "q151",
@@ -4319,7 +4336,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.2.3「 Azure Monitor(モニター)」",
-  "explanation": "Azure Monitor のログを Log Analytics ワークスペースに保存すると、クエリーによるデータ検索や、アラ\nートによる通知、各種情報の視覚化などに活用できます。したがって、答えは D です。"
+  "explanation": "Azure Monitor のログを Log Analytics ワークスペースに保存すると、クエリーによるデータ検索や、アラ\nートによる通知、各種情報の視覚化などに活用できます。したがって、答えは D です。",
+  "diagram": "monitoring"
  },
  {
   "id": "q159",
@@ -5691,7 +5709,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.1.2 「クラウドを利用するメリット」",
-  "explanation": "クラウドを利用するメリットとして、高いスケーラビリティがあります。Azure の App Service などのサービス\nにはインスタンス( 仮想マシン ) のパフォーマンスデータを読み取って、自動的に台数を増やしたり、減らしたり\nすることができます。このように動的にリソースの割り当てを変更できることを「弾力性 (Elasticity)」と呼び\nます。"
+  "explanation": "クラウドを利用するメリットとして、高いスケーラビリティがあります。Azure の App Service などのサービス\nにはインスタンス( 仮想マシン ) のパフォーマンスデータを読み取って、自動的に台数を増やしたり、減らしたり\nすることができます。このように動的にリソースの割り当てを変更できることを「弾力性 (Elasticity)」と呼び\nます。",
+  "diagram": "cloud-benefits"
  },
  {
   "id": "q213",
@@ -6160,7 +6179,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "2.2.3 「サブスクリプションの取得」",
-  "explanation": "サブスクリプションで作成できるリソースの数には上限が設けられており、上限を超えてリソースを作成す\nることはできません。これをサブスクリプションの「クォータ」と呼びます。クォータ値以上のリソースを作成した\nい場合は、サポートリクエストを作成しクォータの増加を要求します。"
+  "explanation": "サブスクリプションで作成できるリソースの数には上限が設けられており、上限を超えてリソースを作成す\nることはできません。これをサブスクリプションの「クォータ」と呼びます。クォータ値以上のリソースを作成した\nい場合は、サポートリクエストを作成しクォータの増加を要求します。",
+  "diagram": "support-plans"
  },
  {
   "id": "q230",
@@ -6244,7 +6264,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "1.1.2 「クラウドを利用するメリット」",
-  "explanation": "スケーラビリティとは、需要の変化に対応するために、IT リソースの増減を柔軟に行えるかどうかの度合い\nのことです。最大 20 個のインスタンスをサポートするクラウドサービスは、最大 5 個のインスタンスしかサポー\nトしないサービスよりもスケーラビリてぃが高いといえます。"
+  "explanation": "スケーラビリティとは、需要の変化に対応するために、IT リソースの増減を柔軟に行えるかどうかの度合い\nのことです。最大 20 個のインスタンスをサポートするクラウドサービスは、最大 5 個のインスタンスしかサポー\nトしないサービスよりもスケーラビリてぃが高いといえます。",
+  "diagram": "cloud-benefits"
  },
  {
   "id": "q233",
@@ -6454,7 +6475,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "",
-  "explanation": "コンプライアンスマネージャーは、Microsoft 365 のコンプライアンス管理ツールです。Microsoft 365 管理セ\nンターなどからアクセスできます。"
+  "explanation": "コンプライアンスマネージャーは、Microsoft 365 のコンプライアンス管理ツールです。Microsoft 365 管理セ\nンターなどからアクセスできます。",
+  "diagram": "compliance"
  },
  {
   "id": "q241",
@@ -6641,7 +6663,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "7.2.3 「 Microsoft Defender for Cloud」",
-  "explanation": "Microsoft Defender for Cloud は、クラウドネイティブアプリケーション保護プラットフォーム(CNAPP)で、\nさまざまなサイバー脅威や脆弱性からリソースを保護するのに役立ちます。Microsoft Defender for Cloud は、\nリソースのセキュリティログを収集し、マイクロソフトの機械学習を使って、さまざまな切り口から監視、評価を\n行います。"
+  "explanation": "Microsoft Defender for Cloud は、クラウドネイティブアプリケーション保護プラットフォーム(CNAPP)で、\nさまざまなサイバー脅威や脆弱性からリソースを保護するのに役立ちます。Microsoft Defender for Cloud は、\nリソースのセキュリティログを収集し、マイクロソフトの機械学習を使って、さまざまな切り口から監視、評価を\n行います。",
+  "diagram": "compliance"
  },
  {
   "id": "q248",
@@ -6839,7 +6862,8 @@ window.QUESTIONS = [
   "statements": [],
   "tfAnswers": [],
   "review": "8.1.4 「 Service Trust Portal とトラストセンター」",
-  "explanation": "Service Trust Portal は、マイクロソフトのクラウドサービスが取得した国際規格の認定 (ISO や PCI など)に\nついての監査レポートやホワイトペーパーなどのコンプライアンスに関連する情報を公開している Web サイト\nです。"
+  "explanation": "Service Trust Portal は、マイクロソフトのクラウドサービスが取得した国際規格の認定 (ISO や PCI など)に\nついての監査レポートやホワイトペーパーなどのコンプライアンスに関連する情報を公開している Web サイト\nです。",
+  "diagram": "compliance"
  },
  {
   "id": "q255",

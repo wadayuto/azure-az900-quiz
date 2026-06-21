@@ -316,4 +316,111 @@ window.DIAGRAMS = {
       <text x="350" y="232" text-anchor="middle" class="d">これらは管理グループ／サブスク／リソースグループの階層に割り当てて効かせる</text>
     </svg>`,
   },
+
+  // 監視
+  "monitoring": {
+    title: "監視のしくみ（Azure Monitor と関連サービス）",
+    svg: `<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+      <style>.t{fill:var(--text);font-size:12.5px;font-weight:700} .d{fill:var(--text-dim);font-size:11px}
+        .src{fill:var(--surface-2);stroke:var(--border)}
+        .mon{fill:color-mix(in srgb,#ffd60a 18%,transparent);stroke:#ffd60a;stroke-width:2}
+        .out{fill:color-mix(in srgb,var(--primary) 16%,transparent);stroke:var(--primary);stroke-width:2}</style>
+      <text x="20" y="24" font-size="14" font-weight="700" class="t">リソースの状態を集めて、見える化・通知する</text>
+      ${[["VM・アプリ",40],["ネットワーク",250],["各種リソース",460]].map(([n,x])=>`<rect x="${x}" y="246" width="180" height="38" rx="8" class="src"/><text x="${x+90}" y="270" text-anchor="middle" class="d">${n}</text><line x1="${x+90}" y1="246" x2="350" y2="180" stroke="var(--border)"/>`).join("")}
+      <rect x="200" y="120" width="300" height="58" rx="12" class="mon"/><text x="350" y="146" text-anchor="middle" class="t" font-size="14">Azure Monitor</text><text x="350" y="167" text-anchor="middle" class="d">メトリック（数値）とログを集約</text>
+      ${[["Log Analytics","ログをクエリ分析",40],["Application Insights","アプリの性能/可用性",262],["アラート/ダッシュボード","通知・可視化",484]].map(([n,s,x])=>`<rect x="${x}" y="44" width="200" height="56" rx="10" class="out"/><text x="${x+100}" y="68" text-anchor="middle" class="t" font-size="11.5">${n}</text><text x="${x+100}" y="88" text-anchor="middle" class="d">${s}</text><line x1="${x+100}" y1="100" x2="350" y2="120" stroke="var(--primary)"/>`).join("")}
+    </svg>`,
+  },
+
+  // セキュリティサービス
+  "security-services": {
+    title: "Defender for Cloud と Microsoft Sentinel",
+    svg: `<svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+      <style>.t{fill:var(--text);font-size:13px;font-weight:700} .d{fill:var(--text-dim);font-size:11.5px}
+        .df{fill:color-mix(in srgb,#34d399 18%,transparent);stroke:#34d399;stroke-width:2}
+        .se{fill:color-mix(in srgb,#7c5cff 20%,transparent);stroke:#7c5cff;stroke-width:2}</style>
+      <text x="20" y="24" font-size="14" font-weight="700" class="t">「守りを固める」役と「攻撃を見張る」役</text>
+      <rect x="30" y="48" width="300" height="160" rx="12" class="df"/><text x="180" y="78" text-anchor="middle" class="t">Microsoft Defender for Cloud</text>
+      <text x="180" y="106" text-anchor="middle" class="d">クラウドの安全性を点数化</text><text x="180" y="126" text-anchor="middle" class="d">（セキュアスコア）</text><text x="180" y="150" text-anchor="middle" class="d">弱点を指摘し、脅威から保護</text><text x="180" y="172" text-anchor="middle" class="d">JIT VMアクセスなど</text><text x="180" y="196" text-anchor="middle" class="d">役割：予防・体制づくり</text>
+      <rect x="370" y="48" width="300" height="160" rx="12" class="se"/><text x="520" y="78" text-anchor="middle" class="t">Microsoft Sentinel</text>
+      <text x="520" y="106" text-anchor="middle" class="d">各所のログを集めて分析する</text><text x="520" y="126" text-anchor="middle" class="d">SIEM/SOAR</text><text x="520" y="150" text-anchor="middle" class="d">攻撃の兆候を検知し</text><text x="520" y="172" text-anchor="middle" class="d">対応を自動化</text><text x="520" y="196" text-anchor="middle" class="d">役割：検知・対応</text>
+    </svg>`,
+  },
+
+  // コンプライアンス
+  "compliance": {
+    title: "コンプライアンス関連（Service Trust Portal / Purview / Compliance Manager）",
+    svg: `<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+      <style>.t{fill:var(--text);font-size:12px;font-weight:700} .d{fill:var(--text-dim);font-size:10.5px}</style>
+      <text x="20" y="24" font-size="14" font-weight="700" class="t">「規則を守れているか」を確かめる道具</text>
+      ${[
+        ["Service Trust Portal","マイクロソフトの","監査レポートや","コンプライアンス情報を入手","#5ac8fa"],
+        ["Compliance Manager","自社の準拠状況を","スコアで評価し","改善を促す","#34d399"],
+        ["Microsoft Purview","社内データを分類・","保護・追跡する","データガバナンス","#7c5cff"],
+      ].map((c,i)=>{const x=18+i*224;return `<rect x="${x}" y="48" width="208" height="150" rx="11" fill="var(--surface-2)" stroke="${c[4]}" stroke-width="2"/><text x="${x+104}" y="76" text-anchor="middle" class="t" fill="${c[4]}">${c[0]}</text><text x="${x+104}" y="108" text-anchor="middle" class="d">${c[1]}</text><text x="${x+104}" y="128" text-anchor="middle" class="d">${c[2]}</text><text x="${x+104}" y="148" text-anchor="middle" class="d">${c[3]}</text>`;}).join("")}
+      <text x="350" y="220" text-anchor="middle" class="d">Service Trust Portal から Compliance Manager にアクセスできる</text>
+    </svg>`,
+  },
+
+  // クラウドの利点まとめ
+  "cloud-benefits": {
+    title: "クラウドの主なメリット",
+    svg: `<svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+      <style>.t{fill:var(--text);font-size:12.5px;font-weight:700} .d{fill:var(--text-dim);font-size:10.5px}</style>
+      <text x="20" y="24" font-size="14" font-weight="700" class="t">クラウド（Azure）が選ばれる理由</text>
+      ${[
+        ["高可用性","止まりにくい(冗長化)"],["スケーラビリティ","必要に応じ増減できる"],["弾力性","需要に自動で伸縮"],
+        ["信頼性/災害復旧","障害・災害から復旧"],["俊敏性(アジリティ)","すぐ用意・素早く展開"],["予測可能性","性能もコストも見積れる"],
+      ].map((c,i)=>{const col=i%3, row=Math.floor(i/3); const x=20+col*224, y=44+row*95;
+        return `<rect x="${x}" y="${y}" width="208" height="80" rx="11" fill="var(--surface-2)" stroke="var(--primary)" stroke-width="1.5"/><text x="${x+104}" y="${y+34}" text-anchor="middle" class="t" fill="var(--primary)">${c[0]}</text><text x="${x+104}" y="${y+58}" text-anchor="middle" class="d">${c[1]}</text>`;}).join("")}
+    </svg>`,
+  },
+
+  // コンピューティングの選択肢
+  "compute-options": {
+    title: "コンピューティングの選択肢（制御 ↔ おまかせ）",
+    svg: `<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+      <style>.t{fill:var(--text);font-size:12px;font-weight:700} .d{fill:var(--text-dim);font-size:10.5px}</style>
+      <text x="20" y="24" font-size="14" font-weight="700" class="t">自由に作り込むか、運用をおまかせにするか</text>
+      ${[
+        ["仮想マシン","IaaS：OSから自分で","#0a84ff"],
+        ["コンテナ","AKS/ACI：軽量に詰める","#28c7a8"],
+        ["App Service","PaaS：土台はおまかせ","#7c5cff"],
+        ["Functions","サーバーレス：実行時だけ","#f5a623"],
+      ].map((c,i)=>{const x=18+i*168;return `<rect x="${x}" y="60" width="152" height="90" rx="11" fill="var(--surface-2)" stroke="${c[2]}" stroke-width="2"/><text x="${x+76}" y="98" text-anchor="middle" class="t" fill="${c[2]}">${c[0]}</text><text x="${x+76}" y="124" text-anchor="middle" class="d">${c[1]}</text>`;}).join("")}
+      <text x="40" y="182" class="d">◀ 制御・自由度が高い / 管理の手間が多い</text>
+      <text x="660" y="182" text-anchor="end" class="d">管理が少なくおまかせ ▶</text>
+      <line x1="30" y1="200" x2="670" y2="200" stroke="var(--border)" stroke-width="2"/>
+    </svg>`,
+  },
+
+  // ストレージの種類
+  "storage-types": {
+    title: "ストレージアカウントに入るデータの種類",
+    svg: `<svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+      <style>.t{fill:var(--text);font-size:12px;font-weight:700} .d{fill:var(--text-dim);font-size:10.5px}
+        .acc{fill:none;stroke:#28c7a8;stroke-width:2}</style>
+      <text x="20" y="24" font-size="14" font-weight="700" class="t">用途に応じた保存方式が選べる</text>
+      <rect x="20" y="44" width="660" height="120" rx="12" class="acc"/><text x="36" y="66" class="t" fill="#28c7a8">ストレージアカウント</text>
+      ${[
+        ["Blob","画像/動画/ファイル等の保管"],["Files","共有フォルダ(SMB)"],["Queue","処理待ちメッセージの行列"],["Table","NoSQLのキー値データ"],
+      ].map((c,i)=>{const x=36+i*160;return `<rect x="${x}" y="80" width="148" height="72" rx="9" fill="var(--surface-2)" stroke="var(--border)"/><text x="${x+74}" y="110" text-anchor="middle" class="t">${c[0]}</text><text x="${x+74}" y="132" text-anchor="middle" class="d">${c[1]}</text>`;}).join("")}
+      <text x="350" y="196" text-anchor="middle" class="d">VMのOS/データ用ディスクは「マネージドディスク」として別途用意する</text>
+    </svg>`,
+  },
+
+  // サポートプラン
+  "support-plans": {
+    title: "Azureのサポートプラン（上位ほど手厚い）",
+    svg: `<svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+      <style>.t{fill:var(--text);font-size:12px;font-weight:700} .d{fill:var(--text-dim);font-size:10.5px}</style>
+      <text x="20" y="24" font-size="14" font-weight="700" class="t">右にいくほど応答が速く、サポートが手厚い（料金も上がる）</text>
+      ${[
+        ["Basic","全員無料","技術サポートなし"],
+        ["Developer","検証・試用向け","営業時間内メール"],
+        ["Standard","本番運用向け","24時間×365日"],
+        ["Professional Direct","ミッションクリティカル","最速応答+専門支援"],
+      ].map((c,i)=>{const x=18+i*168; const h=70+i*22; return `<rect x="${x}" y="${190-h}" width="152" height="${h}" rx="10" fill="color-mix(in srgb,var(--primary) ${10+i*8}%,var(--surface-2))" stroke="var(--primary)" stroke-width="1.5"/><text x="${x+76}" y="${210-h}" text-anchor="middle" class="t" font-size="11">${c[0]}</text><text x="${x+76}" y="172" text-anchor="middle" class="d">${c[1]}</text><text x="${x+76}" y="186" text-anchor="middle" class="d">${c[2]}</text>`;}).join("")}
+    </svg>`,
+  },
 };
