@@ -202,7 +202,7 @@ function renderHome(root) {
   });
   cntWrap.appendChild(cnts);
   if (State.count === 35) {
-    cntWrap.appendChild(el("p", "field-hint", "本番想定モード：はい/いいえ問題は1文ずつを1問として採点し、総回答数に対する正答率を表示します。"));
+    cntWrap.appendChild(el("p", "field-hint", "本番想定モード：はい/いいえ問題は1文ずつを1問として採点。実際のAZ-900に合わせ、1000点満点・700点で合格判定します。"));
   }
   settings.appendChild(cntWrap);
 
@@ -419,13 +419,23 @@ function renderResult(root) {
   wrap.appendChild(el("div", "page-head", `<h1>結果</h1>`));
 
   const score = el("div", "card result-score");
-  const cls = acc >= 80 ? "great" : acc >= 60 ? "good" : "bad";
-  score.innerHTML = `
-    <div class="big-score ${cls}">${acc}<span class="pct">%</span></div>
-    <div class="score-detail">${correct} / ${total} 問正解 ・ 所要 ${mm}分${ss}秒</div>` +
-    (examMode
-      ? `<div class="score-note">本番採点方式（回答単位）・全${qTotal}問中 ${qCorrect}問を完答</div>`
-      : "");
+  if (examMode) {
+    // 実際のAZ-900に合わせて1000点満点・700点合格で表示
+    const scaled = Math.round((total ? correct / total : 0) * 1000);
+    const passed = scaled >= 700;
+    score.innerHTML = `
+      <div class="big-score ${passed ? "great" : "bad"}">${scaled}<span class="pct"> / 1000</span></div>
+      <div class="pass-badge ${passed ? "pass" : "fail"}">${passed ? "合格（700点以上）" : "不合格（700点未満）"}</div>
+      <div class="score-detail">合格ライン 700点 ・ 正答率 ${acc}%</div>
+      <div class="score-detail">${correct} / ${total} 問正解（回答単位）・ 所要 ${mm}分${ss}秒</div>
+      <div class="score-note">全${qTotal}問中 ${qCorrect}問を完答</div>
+      <div class="score-fine">※ AZ-900 は 1〜1000 点で採点され 700 点で合格します。素点から 1000 点への正確な換算式は非公開のため、正答率を 1000 点換算した目安です。</div>`;
+  } else {
+    const cls = acc >= 80 ? "great" : acc >= 60 ? "good" : "bad";
+    score.innerHTML = `
+      <div class="big-score ${cls}">${acc}<span class="pct">%</span></div>
+      <div class="score-detail">${correct} / ${total} 問正解 ・ 所要 ${mm}分${ss}秒</div>`;
+  }
   wrap.appendChild(score);
 
   const actions = el("div", "result-actions");

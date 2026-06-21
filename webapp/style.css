@@ -226,6 +226,13 @@ code.cmd {
   color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent);
   border-radius: 999px; padding: 5px 12px;
 }
+.pass-badge {
+  display: inline-block; margin: 10px 0 4px; font-size: 15px; font-weight: 800;
+  border-radius: 999px; padding: 7px 18px;
+}
+.pass-badge.pass { color: var(--ok); background: color-mix(in srgb, var(--ok) 16%, transparent); border: 1px solid var(--ok); }
+.pass-badge.fail { color: var(--ng); background: color-mix(in srgb, var(--ng) 14%, transparent); border: 1px solid var(--ng); }
+.score-fine { font-size: 11px; color: var(--text-dim); line-height: 1.7; margin-top: 12px; text-align: left; }
 .field-hint { font-size: 12px; color: var(--text-dim); line-height: 1.6; margin: 8px 2px 0; }
 .result-actions { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
 .result-row, .list-row {
